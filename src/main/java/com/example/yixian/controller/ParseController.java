@@ -30,6 +30,7 @@ public class ParseController {
     @RequestMapping("/select")
     public String selectEmployee(Integer id) {
         Employee employee = employeeDao.selectById(id);
+        System.out.println("hello");
         return employee.toString();
     }
 
